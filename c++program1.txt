@@ -1,0 +1,32 @@
+#inckude<stdio.h>
+#include<conio.h>
+#class SI
+{
+private:
+double p,t,r,si;
+public:
+void getptr();
+void computeptr();
+void displaysi();
+};
+void SI::getptr()
+{
+count<<"\n enter the values of principle,time,rate";
+cin>>p>>t>>r;
+}
+void SI::computeptr()
+{
+SI=p*t*r/100;
+}
+void SI::displaysi()
+{
+count<<"\n simple interest="<<SI;
+}
+void main()
+{
+SI si;
+si.getptr();
+si.computeptr();
+si.displaysi();
+getch();
+}
